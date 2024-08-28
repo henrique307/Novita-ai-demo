@@ -8,12 +8,17 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const env_config_1 = require("./config/env.config");
+const markdown_it_1 = __importDefault(require("markdown-it"));
 const grammy_1 = require("grammy");
 const novita_ai_1 = require("./apis/novita.ai");
 const botToken = env_config_1.envConfig.BOT_TOKEN;
 const bot = new grammy_1.Bot(botToken);
+const md = (0, markdown_it_1.default)();
 // Register listeners to handle messages
 bot.on("message:text", (ctx) => __awaiter(void 0, void 0, void 0, function* () {
     var _a;

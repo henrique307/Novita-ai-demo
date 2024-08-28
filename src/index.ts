@@ -1,11 +1,14 @@
 import { CommandContext, Context } from "grammy";
 import { envConfig } from "./config/env.config";
+import markdownit from "markdown-it";
+
 import { Bot } from "grammy";
 import { NovitaAi } from "./apis/novita.ai";
 
 const botToken = envConfig.BOT_TOKEN!;
 
 const bot = new Bot(botToken);
+const md = markdownit();
 
 // Register listeners to handle messages
 bot.on("message:text", async (ctx: Context) => {
