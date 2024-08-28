@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "tsc --watch",
-    "start": "nodemon dist",
+    "build:dev": "tsc --watch",
+    "build": "tsc",
+    "start": "node dist",
+    "start:dev": "nodemon dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
