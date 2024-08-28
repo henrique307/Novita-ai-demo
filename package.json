@@ -1,0 +1,28 @@
+{
+  "name": "novita-ai",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc --watch",
+    "start": "nodemon dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@prisma/client": "^5.17.0",
+    "@types/dotenv": "^8.2.0",
+    "dotenv": "^16.4.5",
+    "grammy": "^1.28.0",
+    "markdown-it": "^14.1.0",
+    "nodemon": "^3.1.4",
+    "openai": "^4.53.2",
+    "prisma": "^5.17.0"
+  },
+  "devDependencies": {
+    "@types/markdown-it": "^14.1.2",
+    "@types/node": "^22.0.2"
+  }
+}
